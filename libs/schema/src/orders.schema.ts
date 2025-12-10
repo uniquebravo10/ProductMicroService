@@ -1,4 +1,4 @@
-import { Prop, Schema } from "@nestjs/mongoose";
+import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 
 @Schema()
 export class OrderSchema{
@@ -7,5 +7,10 @@ export class OrderSchema{
     name:string;
 
     @Prop({required:true})
-    qty:string
+    qty:string;
+
+    
+
 }
+
+export const orderSchema = SchemaFactory.createForClass(OrderSchema);
