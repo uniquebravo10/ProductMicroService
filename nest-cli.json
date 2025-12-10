@@ -19,6 +19,15 @@
         "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
       }
     },
+    "database": {
+      "type": "library",
+      "root": "libs/database",
+      "entryFile": "index",
+      "sourceRoot": "libs/database/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/database/tsconfig.lib.json"
+      }
+    },
     "order-service": {
       "type": "application",
       "root": "apps/order-service",
@@ -35,6 +44,15 @@
       "sourceRoot": "apps/product-service/src",
       "compilerOptions": {
         "tsConfigPath": "apps/product-service/tsconfig.app.json"
+      }
+    },
+    "schema": {
+      "type": "library",
+      "root": "libs/schema",
+      "entryFile": "index",
+      "sourceRoot": "libs/schema/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/schema/tsconfig.lib.json"
       }
     },
     "user-service": {

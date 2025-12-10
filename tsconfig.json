@@ -21,6 +21,19 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "paths": {
+      "database/database": [
+        "libs/database/src"
+      ],
+      "database/database/*": [
+        "libs/database/src/*"
+      ],
+      "schema/schema": [
+        "libs/schema/src"
+      ],
+      "schema/schema/*": [
+        "libs/schema/src/*"
+      ]
+    }
   }
 }
