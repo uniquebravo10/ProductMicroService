@@ -7,7 +7,7 @@ import { userSchema } from './users.schema';
 
 @Module({
   imports:[MongooseModule.forFeature([
-    {name:"order", schema:orderSchema},
+    {name:'order', schema:orderSchema},
     {name:"product", schema:productSchema},
     {name:"user", schema:userSchema},
 

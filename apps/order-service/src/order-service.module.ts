@@ -3,11 +3,13 @@ import { OrderServiceController } from './order-service.controller';
 import { OrderServiceService } from './order-service.service';
 import { OrdersController } from './orders/orders.controller';
 import { OrdersModule } from './orders/orders.module';
-import { OrderService } from './order/order.service';
+import { DatabaseModule } from 'database/database';
+import { SchemaModule } from 'schema/schema';
+
 
 @Module({
   imports: [OrdersModule],
   controllers: [OrderServiceController, OrdersController],
-  providers: [OrderServiceService, OrderService],
+  providers: [OrderServiceService],
 })
 export class OrderServiceModule {}
